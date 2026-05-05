@@ -2,17 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cine Privado</title>
     <style>
-        body { background:#000; color:#fff; text-align:center; font-family:sans-serif; }
-        video { width:100%; max-width:800px; margin-top:20px; border:2px solid red; }
+        body { background-color: #000; color: #fff; font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .cine-container { max-width: 900px; margin: auto; border: 2px solid #e50914; border-radius: 15px; padding: 10px; background: #111; }
+        h1 { color: #e50914; text-transform: uppercase; letter-spacing: 2px; }
+        video { width: 100%; border-radius: 10px; background: #000; }
+        .instrucciones { margin-top: 15px; font-size: 0.9em; color: #aaa; }
     </style>
 </head>
 <body>
-    <h1>🍿 MI SALA DE CINE 🍿</h1>
-    <video controls playsinline crossorigin="anonymous">
-        <source src="https://w3schools.com" type="video/mp4">
-    </video>
-    <p>Si ves al conejo, ¡tu página funciona!</p>
+
+    <div class="cine-container">
+        <h1>Mi Sala de Cine</h1>
+        <p>¡Dale play para iniciar en Rave!</p>
+
+        <!-- REPRODUCTOR DE VIDEO -->
+        <video controls playsinline crossorigin="anonymous">
+            <!-- REEMPLAZA EL LINK DE ABAJO POR EL TUYO -->
+            <source src="https://w3schools.com" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+        <div class="instrucciones">
+            <p>Para cambiar la película, solo debes editar este archivo y cambiar el link en 'source src'.</p>
+        </div>
+    </div>
+
 </body>
 </html>
